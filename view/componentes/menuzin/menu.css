@@ -1,0 +1,65 @@
+*{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+nav{
+    display: block;
+    position: absolute;
+    width: 20vmax;
+    background-color: aquamarine;
+    height: 100vh;
+    margin-left: -16.5vmax;
+    transition: 1s;
+}
+nav:hover{
+    margin-left: 0;
+}
+li{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 10vh;
+    background-color: aqua;
+    font-size: 3vmax;
+    transition: 0.75s;
+    padding: 0.5vmax;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+    font-size: 3.3vmax;
+}
+#menu{
+    display: block;
+    overflow: hidden;
+    margin-right: -86.5%;
+    height: 2.5vmax;
+    width: 2.5vmax;
+}
+span{
+    display: block;
+    width: inherit;
+    height: 4px;
+    background-color: white;
+    transition: 0.5s;
+}
+#s1{
+    margin-top: 10%;
+}
+#s2{
+    margin-top: 20%;
+}
+#s3{
+    margin-top: 20%;
+}
+#menuicon{
+    font-size: 2.5vmax;
+}
