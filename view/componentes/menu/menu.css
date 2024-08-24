@@ -1,22 +1,37 @@
+*{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+}
 nav{
     display: block;
+    overflow: visible;
     position: absolute;
-    width: 20vmax;
-    background-color: aquamarine;
+    width: 20vw;
+    background-image: linear-gradient(180deg, #183b59, #2a5159);;
     height: 100vh;
-    margin-left: -16.5vmax;
+    margin-left: -16vw;
     transition: 1s;
 }
-nav:hover{
+/*nav:hover{
     margin-left: 0;
-}
+}*/
 li{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    overflow: visible;
     width: inherit;
     height: 10vh;
-    background-color: aqua;
-    font-size: 3vmax;
+    font-size: 2.5vmax;
     transition: 0.75s;
     padding: 0.5vmax;
 
@@ -26,20 +41,27 @@ a{
     color: white;
 }
 li:hover{
-    font-size: 3.3vmax;
+    font-size: 2.7vmax;
 }
 #menu{
     display: block;
-    overflow: hidden;
-    margin-right: -86.5%;
+    overflow: visible;
+    position: absolute;
+    margin-top: 5%;
+    margin-right: -120%;
+    transition: 0.5s;
     height: 2.5vmax;
     width: 2.5vmax;
+}
+#menu:hover{
+    cursor: pointer;
 }
 span{
     display: block;
     width: inherit;
     height: 4px;
-    background-color: white;
+    border-radius: 4px;
+    background-color: #164c45;
     transition: 0.5s;
 }
 #s1{
@@ -53,4 +75,17 @@ span{
 }
 #menuicon{
     font-size: 2.5vmax;
+}
+@media(max-width: 1024px){
+    li{        
+        font-weight: 600;
+        font-size: 5vmax;
+    }
+    li:hover{
+        font-size: 5.3vmax;
+    }
+    nav{
+        width: 80vw;        
+        margin-left: -72vw;
+    }
 }
