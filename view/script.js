@@ -3,13 +3,15 @@ s2 = document.getElementById("s2");
 s3 = document.getElementById("s3");
 nav = document.getElementById("nav");
 menu = document.getElementById("menu");
+btn = document.getElementById("mode");
+ball = document.getElementById("ball");
 
-nav.addEventListener('click', function(){
+menu.addEventListener('click', function(){
     c1 = menu.className;
-    console.log(c1);
+    stts = ball.className;
     if(c1 == "button"){
         menu.className = "button-active";
-        nav.style.marginLeft = "0px";
+        nav.className = "active";
         s1.style.rotate = "-360deg";
         s3.style.rotate = "-360deg";
         menu.style.marginRight = "-80%";
@@ -19,37 +21,31 @@ nav.addEventListener('click', function(){
     }
     else{
         menu.className = "button";
+        nav.className = "inactive";
         s1.style.rotate = "0deg";
         s3.style.rotate = "0deg";
         menu.style.marginRight = "-120%";
-        s1.style.backgroundColor = "#164c45";
-        s2.style.backgroundColor = "#164c45";
-        s3.style.backgroundColor = "#164c45";
-        if(window.innerWidth  <= 1024){
-            nav.style.marginLeft = "-72vw";
+        if(stts == "ball inactive"){
+            s1.style.backgroundColor = "#183b59";
+            s2.style.backgroundColor = "#183b59";
+            s3.style.backgroundColor = "#183b59";
         }
         else{
-            nav.style.marginLeft = "-16vw";
+            s1.style.backgroundColor = "white";
+            s2.style.backgroundColor = "white";
+            s3.style.backgroundColor = "white";
         }
     }
 });
 
-/*nav.addEventListener('mouseenter', function() {
-    
-    s1.style.rotate = "140deg";
-    s1.style.marginLeft = "-5px";
-    s1.style.width = "inherit";
-    s3.style.rotate = "40deg";
-    s3.style.marginLeft = "-5px";
-    s3.style.width = "inherit";
+btn.addEventListener('click', function(){
+    stts = ball.className;
+    if(stts == "ball inactive"){
+        ball.className = "ball active";
+        document.body.style.backgroundColor = "#262626";
+    }
+    if(stts == "ball active"){
+        ball.className = "ball inactive";
+        document.body.style.backgroundColor = "white";
+    }
 });
-
-nav.addEventListener('mouseleave', function() {
-    
-    s1.style.rotate = "360deg";
-    s1.style.marginLeft = "0px";
-    s1.style.width = "inherit";
-    s3.style.rotate = "360deg";
-    s3.style.marginLeft = "0px";
-    s3.style.width = "inherit";
-});*/

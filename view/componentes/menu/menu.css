@@ -11,8 +11,9 @@ body{
     display: inline-block;
     width: 100vw;
     height: 100vh;
+    transition: 0.75s;
 }
-nav{
+nav.inactive{
     display: block;
     overflow: visible;
     position: absolute;
@@ -20,6 +21,16 @@ nav{
     background-image: linear-gradient(180deg, #183b59, #2a5159);;
     height: 100vh;
     margin-left: -16vw;
+    transition: 1s;
+}
+nav.active{
+    display: block;
+    overflow: visible;
+    position: absolute;
+    width: 20vw;
+    background-image: linear-gradient(180deg, #183b59, #2a5159);;
+    height: 100vh;
+    margin-left: 0vw;
     transition: 1s;
 }
 /*nav:hover{
@@ -36,12 +47,37 @@ li{
     padding: 0.5vmax;
 
 }
+button{
+    height: 2.5vmax;
+    width: 4vmax;
+    background-color: transparent;
+    border: 3px white solid;
+    border-radius: 16px;
+    padding-left: 1%;
+}
+#ball.ball{
+    height: 1.8vmax;
+    width: 1.8vmax;
+    background-color: white;
+    border-radius: 100%;
+}
+#ball.ball.active{
+    margin-left: 45%;
+}
+#ball.ball.inactive{
+    margin-left: 0;
+}
+svg{
+    height: 50%;
+    transition: 0.75s;
+}
 a{
     text-decoration: none;
     color: white;
 }
 li:hover{
     font-size: 2.7vmax;
+    cursor: pointer;
 }
 #menu{
     display: block;
@@ -61,17 +97,15 @@ span{
     width: inherit;
     height: 4px;
     border-radius: 4px;
-    background-color: #164c45;
+    background-color: #183b59;
     transition: 0.5s;
 }
-#s1{
-    margin-top: 10%;
-}
+
 #s2{
-    margin-top: 20%;
+    margin-top: 21%;
 }
 #s3{
-    margin-top: 20%;
+    margin-top: 21%;
 }
 #menuicon{
     font-size: 2.5vmax;
@@ -84,8 +118,16 @@ span{
     li:hover{
         font-size: 5.3vmax;
     }
-    nav{
+    #menu{
+        height: 4vmax;
+        width: 4vmax;
+    }
+    nav.inactive{
         width: 80vw;        
-        margin-left: -72vw;
+        margin-left: -80vw;
+    }
+    nav.active{
+        width: 80vw;        
+        margin-left: 0vw;
     }
 }
