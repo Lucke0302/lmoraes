@@ -7,9 +7,11 @@
         <li><a href=”#”>pagina 3</a></li>
         <li><a href=”#”>pagina 4</a></li>
         <li class="dark-light" id="mode"><a>
-            <ion-icon id="sun" name="sunny"></ion-icon>
-            <button class="light"><span id="ball" class="ball inactive"></span></button>
-            <ion-icon id="moon" name="moon"></ion-icon>
+            <div id="m2">
+                <ion-icon id="sun" name="sunny"></ion-icon>
+                <button class="light"><span id="ball" class="ball inactive"></span></button>
+                <ion-icon id="moon" name="moon"></ion-icon>
+            </div>
         </a></li>  
     </ul>
 </nav>
