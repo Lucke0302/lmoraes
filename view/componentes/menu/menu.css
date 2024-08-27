@@ -147,4 +147,10 @@ span{
         background-color: white;
         border-radius: 100%;
     }
+    #mode{        
+        margin-top: 75%;
+    }
+    #mode:hover{    
+        font-size: 5.3vmax;
+    }
 }
