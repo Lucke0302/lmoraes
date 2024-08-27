@@ -1,3 +1,4 @@
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 <nav id="nav" class="inactive">
     <ul>
         <li><a id="menu" class="button"><span id="s1" class="span"></span><span id="s2" class="span"></span><span id="s3" class="span"></span></a></li>
@@ -6,9 +7,9 @@
         <li><a href=”#”>pagina 3</a></li>
         <li><a href=”#”>pagina 4</a></li>
         <li class="dark-light" id="mode"><a>
-            Light
+            <ion-icon id="sun" name="sunny"></ion-icon>
             <button class="light"><span id="ball" class="ball inactive"></span></button>
-            Dark
+            <ion-icon id="moon" name="moon"></ion-icon>
         </a></li>  
     </ul>
 </nav>
