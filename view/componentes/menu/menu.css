@@ -67,10 +67,6 @@ button{
 #ball.ball.inactive{
     margin-left: 0;
 }
-svg{
-    height: 50%;
-    transition: 0.75s;
-}
 a{
     text-decoration: none;
     color: white;
@@ -129,5 +125,15 @@ span{
     nav.active{
         width: 80vw;        
         margin-left: 0vw;
+    }
+    button{
+        height: 4vmax;
+        width: 6.4vmax;
+    }
+    #ball.ball{
+        height: 2.48vmax;
+        width: 2.48vmax;
+        background-color: white;
+        border-radius: 100%;
     }
 }
