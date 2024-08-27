@@ -53,7 +53,7 @@ button{
     background-color: transparent;
     border: 3px white solid;
     border-radius: 16px;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 button:hover{
     cursor: pointer;
@@ -65,7 +65,7 @@ button:hover{
     border-radius: 100%;
 }
 #ball.ball.active{
-    margin-left: 45%;
+    margin-left: 43%;
 }
 #ball.ball.inactive{
     margin-left: 0;
